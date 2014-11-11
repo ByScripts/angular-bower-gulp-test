@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="chat" ng-strict-di>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="container">
+	<h1>Spiky Chat</h1>
+	<div class="row">
+		<div class="col-xs-12">
+			<by-messages ng-show="roomId"></by-messages>
+			<div ng-show="!roomId" class="alert alert-danger ng-cloak">
+				Aucun identifiant de salle n'est présent
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
